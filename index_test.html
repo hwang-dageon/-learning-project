@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBWAY 써브웨이</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./css/ui.main.css">
+</head>
+<body>
+    <div class="content">
+        <h1 class="logo"><a href="/">SUBWAY</a></h1>
+        <!-- gnb -->
+        <nav id="gnb">
+            <ul>
+                <li>
+                    <a class="dp1" href="#none">메뉴소개</a>
+                    <div class="dp2">
+                        <ul>
+                            <li>
+                                <a href="/menuList/sandwich">샌드위치</a>
+                            </li>
+                            <li>
+                                <a href="/menuList/unit">랩ㆍ기타</a>
+                            </li>
+                            <li>
+                                <a href="/menuList/salad">샐러드</a>
+                            </li>
+                            <li>
+                                <a href="/menuList/morning">아침메뉴</a>
+                            </li>
+                            <li>
+                                <a href="/menuList/sidedrink">스마일 썹</a>
+                            </li>
+                            <li>
+                                <a href="/menuList/catering">단체메뉴</a>
+                            </li>
+                            <!--   <li><a href="/menuList/sandwich" th:class="${servletPath  eq '/menuList/sandwich' or servletPath  eq '/menuView/sandwich' ? 'active':''}">샌드위치</a></li>
+                               <li><a href="/menuList/wrap" th:class="${servletPath  eq '/menuList/wrap' or servletPath eq '/menuView/wrap' ? 'active':''}">랩</a></li>
+                               <li><a href="/menuList/salad" th:class="${servletPath  eq '/menuList/salad' or servletPath eq '/menuView/salad' ? 'active':''}">찹샐러드</a></li>
+                               <li><a href="/menuList/sidesDrink" th:class="${servletPath eq '/menuList/sidesDrink' ? 'active':''}">스마일 썹</a></li>
+                               <li><a href="/menuList/catering" th:class="${servletPath eq '/menuList/catering' ? 'active':''}">단체메뉴</a></li>-->
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#none" class="dp1">이용방법</a>
+                    <div class="dp2">
+                        <ul>
+                            <li><a href="/utilizationSubway">써브웨이 이용방법</a></li><!-- 20180201 -->
+                            <li><a href="/utilizationGroupMenu">단체메뉴 이용방법</a></li>
+                            <li><a href="/freshInfo">신선한 재료 소개</a></li>
+                            <li><a href="/appFastMenu">App 이용방법</a></li> <!-- 180129 hidden 처리 -->
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#none" class="dp1">새소식</a>
+                    <div class="dp2">
+                        <ul>
+                            <li><a href="/eventList">이벤트ㆍ프로모션</a></li>
+                            <li><a href="/newsList">뉴스ㆍ공지사항</a></li>
+                            <li><a href="/tvCommercial">광고영상</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#none" class="dp1">써브웨이</a>
+                    <div class="dp2">
+                        <ul>
+                            <li><a href="/subwayHistory">써브웨이 역사</a></li>
+                            <li><a href="/subwayPromise">써브웨이 약속</a></li>
+                            <li style="display:none;"><a href="#">써브웨이 사회공헌</a></li>
+                            <li><a href="/subwaySandwichArtist">샌드위치 아티스트 지원</a></li>
+                            <li><a href="/storeSearch">매장찾기</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#none" class="dp1">가맹점</a>
+                    <div class="dp2">
+                        <ul>
+                            <li><a href="/franchise">써브웨이 프랜차이즈</a></li>
+                            <li><a href="/franchiseFaq">가맹관련 FAQ</a></li>
+                            <li><a href="/franchiseInquiry">가맹신청ㆍ문의</a></li>
+                            <li><a href="/franchiseBranchGuide">지사안내</a></li>
+                            <li><a href="/franchiseInformation">사업설명회</a></li>
+                            <!--<li><a href="/franchiseRental" th:class="${servletPath eq '/franchiseRental' ? 'active':''}">임대문의</a></li>-->
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a class="dp1" href="javascript:void(0);">온라인 주문</a>
+                    <div class="dp2">
+                        <ul>
+                            <li><a href="/order/view/fast/near/store">FAST-SUB</a></li>
+                            <li><a href="/order/view/home/step1">HOME-SUB</a></li>
+                            <li><a href="/order/view/group">단체주문</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <!--// gnb -->
+
+        <!-- util menu -->
+        <div class="util_menu">
+            <ul>
+                
+                    <li class="before_sign"><a href="/member/login">로그인</a></li>
+                    <li class="before_sign"><a href="/member/join/step1">회원가입</a></li>
+                
+                
+                <li class="icon_menu global_subway">
+                    <a href="http://www.subway.com/en-us/exploreourworld" target="_blank" title="Global Subway"><span class="blind">Global Subway</span></a>
+                </li>
+            </ul>
+        </div>
+        <!--// util menu -->
+    </div>
+</body>
+</html>
